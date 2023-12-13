@@ -224,7 +224,7 @@ const multipleBooksNoMatchOut = {
 }
 
 /** Output object for test 11.*/
-const CaseSensitiveNoMatchOut = {
+const caseSensitiveNoMatchOut = {
     "SearchTerm": "tHE",
     "Results": []
 }
@@ -381,11 +381,11 @@ if (test10result.Results.length == 0) {
  * Type: Case-Sensitive
  * Description: Checks that the function is case sensitive when utilizing the searchTerm. */
 const test11result = findSearchTermInBooks("tHE", multipleBooksIn);
-if (JSON.stringify(CaseSensitiveNoMatchOut) === JSON.stringify(test11result)) {
+if (JSON.stringify(caseSensitiveNoMatchOut) === JSON.stringify(test11result)) {
     console.log("PASS: Test 11");
 } else {
     console.log("FAIL: Test 11");
-    console.log("Expected:", CaseSensitiveNoMatchOut);
+    console.log("Expected:", caseSensitiveNoMatchOut);
     console.log("Received:", test11result);
 }
 
